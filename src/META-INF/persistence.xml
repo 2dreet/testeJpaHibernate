@@ -7,6 +7,8 @@
     <persistence-unit name="projeto-jpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
+        <class>br.com.projetoJpa.modelo.basico.Usuario</class>
+
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="com.mysql.jdbc.Driver"/>
