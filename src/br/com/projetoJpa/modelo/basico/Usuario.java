@@ -1,6 +1,8 @@
 package br.com.projetoJpa.modelo.basico;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 // aqui o entity server para identificar que é uma entidade da JPA
@@ -9,6 +11,9 @@ public class Usuario {
 
     // aqui refencia qual atributo é o id
     @Id
+    // aqui a tag GeneratedValue server para criar auto incremento
+    // o valor Identity server para dizer que é uma identidade um ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
@@ -46,5 +51,14 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
