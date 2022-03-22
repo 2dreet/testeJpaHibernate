@@ -1,4 +1,6 @@
-package br.com.projetoJpa.modelo.basico;
+package br.com.projetoJpa;
+
+import br.com.projetoJpa.modelo.basico.Usuario;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

@@ -1,13 +1,10 @@
 package br.com.projetoJpa.modelo.basico;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 // aqui o entity server para identificar que é uma entidade da JPA
 @Entity
-public class Usuario {
+public class Usuario implements Entidade {
 
     // aqui refencia qual atributo é o id
     @Id
@@ -54,6 +51,7 @@ public class Usuario {
     }
 
     @Override
+    @Transient
     public String toString() {
         return "Usuario{" +
                 "id=" + id +
