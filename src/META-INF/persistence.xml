@@ -11,6 +11,8 @@
         <class>br.com.projetoJpa.modelo.basico.Produto</class>
         <class>br.com.projetoJpa.modelo.umPraUm.Assento</class>
         <class>br.com.projetoJpa.modelo.umPraUm.Cliente</class>
+        <class>br.com.projetoJpa.modelo.umPraMuitos.ItemPedido</class>
+        <class>br.com.projetoJpa.modelo.umPraMuitos.Pedido</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
@@ -24,7 +26,7 @@
 
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.MySQL57Dialect"/>
-            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
