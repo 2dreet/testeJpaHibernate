@@ -23,7 +23,8 @@ public class ItemPedido implements Entidade {
 
     // o @ManyToOne é para sinalizar que vai ter varios itemPedido
     // para um pedido
-    @ManyToOne
+    // o fetch = EAGER faz o carregamento junto com a model
+    @ManyToOne(fetch = FetchType.EAGER)
     private Produto produto;
 
     // @Column configura a coluna da tabela

@@ -27,7 +27,8 @@ public class Pedido implements Entidade {
     // nisso nao vai criar a coluna no banco apenas na memoria ira ser
     // populada, mappedBy diz qual o nome do atributo que esta na classe ItemPedido
     // aque mapea a Model Pedido
-    @OneToMany( mappedBy = "pedido")
+    // o fetch = FetchType.LAZY é marcado para fazer depois quando necessario
+    @OneToMany( mappedBy = "pedido", fetch = FetchType.LAZY)
     private List<ItemPedido> itemPedidos;
 
     public Pedido() {
