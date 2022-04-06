@@ -20,6 +20,9 @@
         <class>br.com.projetoJpa.modelo.muitosPraMuitos.Sobrinho</class>
         <class>br.com.projetoJpa.modelo.muitosPraMuitos.Filme</class>
         <class>br.com.projetoJpa.modelo.muitosPraMuitos.Ator</class>
+        <class>br.com.projetoJpa.modelo.composicao.Endereco</class>
+        <class>br.com.projetoJpa.modelo.composicao.Fornecedor</class>
+        <class>br.com.projetoJpa.modelo.composicao.Funcionario</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
