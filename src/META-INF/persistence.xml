@@ -23,6 +23,9 @@
         <class>br.com.projetoJpa.modelo.composicao.Endereco</class>
         <class>br.com.projetoJpa.modelo.composicao.Fornecedor</class>
         <class>br.com.projetoJpa.modelo.composicao.Funcionario</class>
+        <class>br.com.projetoJpa.modelo.heranca.Pessoa</class>
+        <class>br.com.projetoJpa.modelo.heranca.PessoaFisica</class>
+        <class>br.com.projetoJpa.modelo.heranca.PessoaJuridica</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
