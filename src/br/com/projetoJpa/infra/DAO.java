@@ -141,4 +141,21 @@ public class DAO<E extends Entidade> {
         entityManager.close();
     }
 
+    // aqui criamos uma funcao para realizar a consulta
+    public List<E> consultar(String nomeConsulta, Object ... params) {
+        // ao usar o createNamedQuery ele ira usar tantos para JPQL ou Querys nativas
+        TypedQuery<E> query = entityManager.createNamedQuery(nomeConsulta, classe);
+        for (int i = 0; i < params.length; i += 2) {
+            query.setParameter(params[i].toString(), params[i+1]);
+        }
+        return query.getResultList();
+    }
+
+    // aqui criamos uma funcao para realizar a consulta
+    //  de um unico registro
+    public E consultarUm(String nomeConsulta, Object ... params) {
+        List<E> elements = consultar(nomeConsulta, params);
+        return elements != null && elements.size() > 0 ? elements.get(0) : null;
+    }
+
 }

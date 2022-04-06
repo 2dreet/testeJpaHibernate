@@ -7,6 +7,9 @@
     <persistence-unit name="projeto-jpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
+<!--        apontar para o xml que tem as consultas-->
+        <mapping-file>META-INF/consultas.xml</mapping-file>
+
         <class>br.com.projetoJpa.modelo.basico.Usuario</class>
         <class>br.com.projetoJpa.modelo.basico.Produto</class>
         <class>br.com.projetoJpa.modelo.umPraUm.Assento</class>

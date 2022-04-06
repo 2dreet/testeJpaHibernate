@@ -77,5 +77,13 @@ public class Filme implements Entidade {
         this.atores = atores;
     }
 
+    @Override
+    public String toString() {
+        return "Filme{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", nota=" + nota +
+                '}';
+    }
 }
 
